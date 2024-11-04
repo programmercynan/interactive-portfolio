@@ -1,0 +1,175 @@
+/* Basic Rest */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+/* Section Styles */
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #00ADB5;
+}
+
+button {
+    background-color: #00ADB5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00CED1;
+}
+
+/* Landing Section */
+#landing {
+    background: linear-gradient(to right, #00ADB5, #393E46);
+    color: #FFF;
+    padding: 50px 20px;
+}
+
+#landing h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#landing p {
+    font-size: 1.2rem;
+}
+
+/* About Section */
+#about {
+    background-color: #1B1B1B;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card-container .card {
+    background-color: #333;
+    color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.card-container .card:hover {
+    transform: scale(1.05);
+}
+
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.projects-container .project {
+    background-color: #393E46;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.projects-container .project:hover {
+    transform: scale(1.05);
+}
+
+.projects-container .project::after {
+    content: "Project Info";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 173, 181, 0.8);
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.projects-container .project:hover::after {
+    opacity: 1;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.skill-bar {
+    background-color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 20px;
+}
+
+.skill-bar .progress {
+    background-color: #00ADB5;
+    height: 100%;
+    width: 75%; /* Adjust width based on skill level */
+}
+
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #00ADB5;
+    border-radius: 5px;
+    background-color: #333;
+    color: #FFF;
+}
+
+button {
+    padding: 10px;
+    background-color: #00ADB5;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00CED1;
+}
